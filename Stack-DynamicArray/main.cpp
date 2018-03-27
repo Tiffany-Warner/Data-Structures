@@ -18,7 +18,7 @@ void testTopPop(Stack &stack);
 
 int main() {
 	cout << "**********Stack**********" << endl;
-	Stack stack(2);
+	Stack stack;
 
 	testPush(stack, 10);
 	testTopPop(stack);
