@@ -14,6 +14,7 @@ class DyArray {
 
 private:
 	TYPE *data = 0;
+	TYPE failed = -1;
 	int size;
 	int capacity;
 

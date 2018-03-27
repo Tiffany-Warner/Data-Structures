@@ -129,6 +129,7 @@ TYPE DyArray::getValue(int index){
 	} else {
 		cout << "ERROR: Specified index is out of range of array...\n"
 			<< endl;
+		return failed;
 	}
 }
 
