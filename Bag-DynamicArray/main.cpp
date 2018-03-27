@@ -1,7 +1,7 @@
 /********************************************************************
 ** Author: Tiffany Warner
 ** Date Created: March 25 2018
-** Last Edit date: March 26 2017
+** Last Edit date: March 26 2018
 ** Description: Utilzing the Bag ADT with a Dynamic Array
 ********************************************************************/
 #include "Bag.hpp"
@@ -18,9 +18,6 @@ void fillValues(Bag &bag, int numValues);
 void testContains(Bag &bag, int numTests);
 
 int main() {
-	bool searchRes;
-	std::string testRes;
-
 	cout << "**********Bag**********" << endl;
 	Bag bag(2);
 
