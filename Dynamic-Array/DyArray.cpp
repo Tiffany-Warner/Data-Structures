@@ -13,7 +13,7 @@ using std::endl;
 /*======================Public Functions===========================*/
 
 /********************************************************************
-**						Constructor
+**			Constructor
 ** Description: Initializes a new data array with specified capacity
 ********************************************************************/
 DyArray::DyArray(int capacity) {
@@ -35,13 +35,13 @@ DyArray::DyArray(int capacity) {
 	this->capacity = capacity;
 }
 /********************************************************************
-**						getSize
+**			getSize
 ********************************************************************/
 int DyArray::getSize() {
 	return size;
 }
 /********************************************************************
-**						add
+**			add
 ** Description: Checks size and capacity to see if a resize is needed.
 ** Then adds a new element to the "end" of the array
 ********************************************************************/
@@ -55,7 +55,7 @@ void DyArray::add(TYPE value) {
 }
 
 /********************************************************************
-**						put
+**			put
 ** Description: Inserts a value at specified index by overwriting 
 ** current value.
 ********************************************************************/
@@ -70,7 +70,7 @@ void DyArray::put(int index, TYPE value) {
 	}
 }
 /********************************************************************
-**						insertAt
+**			insertAt
 ** Description: Inserts a value into the array at a specified index.
 ** Moves remaining values over one index. 
 ********************************************************************/
@@ -98,7 +98,7 @@ void DyArray::insertAt(int index, TYPE value) {
 }
 
 /********************************************************************
-**						removeAt
+**			removeAt
 ** Description: Removes element at specified location
 ********************************************************************/
 void DyArray::removeAt(int index) {
@@ -119,7 +119,7 @@ void DyArray::removeAt(int index) {
 
 }
 /********************************************************************
-**						getValue
+**			getValue
 ** Description: Retrieves value of element at specified index
 ********************************************************************/
 TYPE DyArray::getValue(int index){
@@ -133,7 +133,7 @@ TYPE DyArray::getValue(int index){
 }
 
 /********************************************************************
-**						isEmpty()
+**			isEmpty()
 ** Description: Checks if array is empty. Return true if empty, 
 ** otherwise return false
 ********************************************************************/
@@ -146,7 +146,7 @@ bool DyArray::isEmpty() {
 	}
 }
 /********************************************************************
-**						Destructor
+**		Destructor
 ** Description:	Release allocated memory. 
 ********************************************************************/
 DyArray::~DyArray() {
@@ -156,7 +156,7 @@ DyArray::~DyArray() {
 /*======================Private Functions===========================*/
 
 /********************************************************************
-**						resize
+**			resize
 ** Description: Doubles capacity of array by creating a new old,
 ** copying the elements over from the old array and deleting the old
 ** array.
@@ -173,7 +173,7 @@ void DyArray::resize() {
 	newArr = 0;
 }
 /********************************************************************
-**						freeDyArray
+**			freeDyArray
 ** Description:	Allows user to release memory and reset their
 ** dynamic array properties to zero
 ********************************************************************/
